@@ -6,7 +6,7 @@
 /*   By: lryst <lryst@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/19 17:32:55 by lryst             #+#    #+#             */
-/*   Updated: 2020/06/23 19:31:20 by lryst            ###   ########.fr       */
+/*   Updated: 2020/06/23 21:30:47 by lryst            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 int main()
 {
-    char str[] = "Hello word!";
+    //char str[] = "Hello word!";
 
-    printf("%d\n", ft_strlen(str));
+    printf("%d\n", ft_strlen("coucou"));
     
     return(0);
 }

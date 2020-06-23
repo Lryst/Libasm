@@ -1,11 +1,12 @@
-BITS 64
-    GLOBAL ft_strlen:function
-    section.text
+section .text
+    global ft_strlen
+
 ft_strlen:
-    push rbp;
+    xor rdx,rdx
     mov rbp,rsp
-
     mov rax, rdi
-
+inc:
+    inc [rax]
+end:
     leave
     ret
