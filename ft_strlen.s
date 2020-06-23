@@ -1,12 +1,20 @@
 section .text
-    global ft_strlen
-
-ft_strlen:
+    global _ft_strlen
+_ft_strlen:
     xor rdx,rdx
-    mov rbp,rsp
-    mov rax, rdi
-inc:
-    inc [rax]
+    mov rbp,rsi
+
+loop:
+    mov al, rbx
+    test al,al
+    jz end
+    inc edx
+    inc ebx
+    jmp loop
+
 end:
-    leave
-    ret
+    mov eax,4
+    mov ebx,1
+    mov ecx,rsi
+    mov edx,rbx
+    int 80h
